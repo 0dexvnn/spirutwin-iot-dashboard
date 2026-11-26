@@ -1,0 +1,45 @@
+# Keamanan & Kredensial Pribadi (JANGAN DI-COMMIT)
+.env
+.env.backup
+.env.production
+.env.*.local
+*.key
+*.pem
+
+# Dependensi & Package Managers
+vendor/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# File Kompresi & Arsip Besar
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Dokumen Pribadi / Lomba Bertanda Tangan
+docs/private/
+*Pernyataan*.pdf
+*Proposal*.docx
+
+# Framework Cache & Penyimpanan Sementara
+storage/*.key
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+!storage/framework/.gitignore
+!storage/logs/.gitignore
+.phpunit.result.cache
+
+# Editor & OS Artifacts
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

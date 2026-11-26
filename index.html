@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPIRUTWIN | Smart Monitoring Spirulina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="overrides.css" />
+    <link rel="stylesheet" href="refinement.css" />
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="petani.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"><img src="assets/spirutwin-logo-mark-white.jpeg" alt="Logo SPIRUTWIN" /></div><div><strong>SPIRUTWIN</strong><span>Smart Monitoring Spirulina</span></div></div>
+      <div class="nav-label">MENU UTAMA</div>
+      <nav>
+        <a class="active" href="#dashboard"><span>⌂</span>Dashboard</a>
+        <a href="#kolam"><span>≋</span>Semua Kolam</a>
+        <a href="#monitoring"><span>◉</span>Monitoring Real-time</a>
+        <a href="#analisis"><span>⌁</span>Grafik & Analisis</a>
+        <a href="#biomassa"><span>◌</span>Prediksi Biomassa</a>
+        <a href="#twin"><span>◈</span>Digital Twin</a>
+        <a href="#riwayat"><span>▣</span>Riwayat Data</a>
+        <a href="#petani"><span>◫</span>Data Petani</a>
+        <a href="#notifikasi"><span>♧</span>Bot Telegram <b>0</b></a>
+        <a href="#pengaturan"><span>⚙</span>Pengaturan</a>
+        <a href="#simulator"><span>◉</span>Sensor Simulator</a>
+      </nav>
+      <div class="sidebar-foot">© 2026 SPIRUTWIN<br />Tech Crusaders · Politeknik Negeri Sambas</div>
+    </aside>
+
+    <main id="dashboard">
+      <header>
+        <button class="mobile-menu" aria-label="Buka menu">☰</button>
+        <div class="page-title"><span>Dashboard Utama</span><small>Ringkasan kondisi budidaya Spirulina secara real-time</small></div>
+        <div class="header-right"><span class="connected">● Terhubung</span><span class="date">▣ <script>document.write(new Intl.DateTimeFormat('id-ID',{day:'numeric',month:'short',year:'numeric'}).format(new Date()))</script></span><span class="clock">◷ <time>12:24 WIB</time></span><div class="user"><div>AD</div><span>Administrator</span>⌄</div></div>
+      </header>
+
+      <section class="content">
+        <div class="welcome"><div><p>Selamat siang, Pembudidaya <span>👋</span></p><h1>Budidaya sehat, panen lebih tepat.</h1></div><button class="outline-btn">↻ Perbarui data</button></div>
+        <div class="stat-grid">
+          <article class="stat-card cyan"><div class="stat-icon">≋</div><p>Total Kolam</p><strong>4</strong><small>Kolam aktif</small><em>+1 minggu ini</em></article>
+          <article class="stat-card green"><div class="stat-icon">♧</div><p>Status Kolam</p><strong>3 <small>Optimal</small></strong><small><b class="amber-text">1 perlu perhatian</b></small><em>75% kondisi ideal</em></article>
+          <article class="stat-card purple"><div class="stat-icon">◌</div><p>Rata-rata Biomassa</p><strong>1.24 <small>kg/m³</small></strong><small>Akumulasi semua kolam</small><em>↗ 8.4% dari kemarin</em></article>
+          <article class="stat-card orange"><div class="stat-icon">♧</div><p>Peringatan Aktif</p><strong>2</strong><small>Butuh tindak lanjut</small><em class="amber-text">Cek notifikasi</em></article>
+          <article class="stat-card lime"><div class="stat-icon">▣</div><p>Panen Terdekat</p><strong>2–3 <small>hari</small></strong><small>Kolam 01</small><em>Estimasi 23 Agu</em></article>
+        </div>
+
+        <div class="main-grid" id="kolam">
+          <section class="panel table-panel"><div class="panel-title"><div><h2>Ringkasan Semua Kolam <span class="info">i</span></h2><p>Pembaruan sensor terakhir: baru saja</p></div><a href="#monitoring">Lihat semua →</a></div>
+            <div class="table-wrap"><table><thead><tr><th>Kolam</th><th>Status</th><th>pH</th><th>Suhu</th><th>Cahaya</th><th>Kekeruhan</th><th>TDS</th><th>Prediksi Biomassa</th><th>Prediksi Panen</th><th></th></tr></thead>
+              <tbody>
+                <tr data-pond="Kolam 01"><td><strong>Kolam 01</strong><small>ESP32-01</small></td><td><span class="badge good">● Optimal</span></td><td>9.21</td><td>28.4 °C</td><td>2.240 lux</td><td>12.4 NTU</td><td>1.350 ppm</td><td><strong>1.42</strong> kg/m³</td><td class="harvest">2–3 hari</td><td><button class="detail-btn">Detail</button></td></tr>
+                <tr data-pond="Kolam 02"><td><strong>Kolam 02</strong><small>ESP32-02</small></td><td><span class="badge warn">● Perhatian</span></td><td>8.35</td><td>29.8 °C</td><td>1.120 lux</td><td>22.8 NTU</td><td>1.410 ppm</td><td><strong>1.08</strong> kg/m³</td><td class="harvest">4–5 hari</td><td><button class="detail-btn">Detail</button></td></tr>
+                <tr data-pond="Kolam 03"><td><strong>Kolam 03</strong><small>ESP32-03</small></td><td><span class="badge good">● Optimal</span></td><td>9.05</td><td>27.6 °C</td><td>2.860 lux</td><td>11.6 NTU</td><td>1.330 ppm</td><td><strong>1.36</strong> kg/m³</td><td class="harvest">3 hari</td><td><button class="detail-btn">Detail</button></td></tr>
+                <tr data-pond="Kolam 04"><td><strong>Kolam 04</strong><small>ESP32-04</small></td><td><span class="badge good">● Optimal</span></td><td>8.74</td><td>26.9 °C</td><td>1.980 lux</td><td>15.1 NTU</td><td>1.520 ppm</td><td><strong>1.11</strong> kg/m³</td><td class="harvest">4 hari</td><td><button class="detail-btn">Detail</button></td></tr>
+              </tbody></table></div>
+          </section>
+          <aside class="right-col"><section class="panel health-panel"><div class="panel-title"><div><h2>Kesehatan Budidaya</h2><p>Rata-rata kondisi 4 kolam</p></div></div><div class="health-ring"><div><strong>82</strong><span>/100</span><small>BAIK</small></div></div><div class="health-bars"><p><span>Parameter ideal</span><b>4/5</b></p><div><i style="width:80%"></i></div><p><span>Sensor aktif</span><b>20/20</b></p><div><i style="width:100%"></i></div></div></section></aside>
+        </div>
+
+        <section class="detail-section" id="monitoring">
+          <div class="section-heading"><div><span class="eyebrow">MONITORING REAL-TIME</span><h2 id="detail-title">Detail Kolam · Kolam 01</h2><p>Lima parameter utama sesuai rancangan SPIRUTWIN</p></div><button class="outline-btn" id="simButton">◈ Simulasikan Digital Twin</button></div>
+          <div class="parameter-grid">
+            <article class="parameter"><div class="parameter-head"><span>pH Air <i class="info">i</i></span><b class="badge good">Optimal</b></div><strong>9.21</strong><p>Ideal: <b>8.0 – 11.0</b> · kondisi basa</p><div class="sparkline green-line"></div></article>
+            <article class="parameter"><div class="parameter-head"><span>Suhu Air <i class="info">i</i></span><b class="badge good">Optimal</b></div><strong>28.4 <small>°C</small></strong><p>Ideal: <b>20 – 30 °C</b> · optimum 25–30 °C</p><div class="sparkline orange-line"></div></article>
+            <article class="parameter"><div class="parameter-head"><span>Cahaya (BH1750) <i class="info">i</i></span><b class="badge good">Optimal</b></div><strong>2.240 <small>lux</small></strong><p>Ideal: <b>1.000 – 3.500 lux</b></p><div class="sparkline yellow-line"></div></article>
+            <article class="parameter"><div class="parameter-head"><span>Kekeruhan <i class="info">i</i></span><b class="badge good">Stabil</b></div><strong>12.4 <small>NTU</small></strong><p>Indikator kejernihan media kultur</p><div class="sparkline blue-line"></div></article>
+            <article class="parameter"><div class="parameter-head"><span>TDS <i class="info">i</i></span><b class="badge good">Stabil</b></div><strong>1.350 <small>ppm</small></strong><p>Padatan terlarut dalam media</p><div class="sparkline purple-line"></div></article>
+          </div>
+        </section>
+
+        <div class="lower-grid" id="analisis">
+          <section class="panel chart-panel"><div class="panel-title"><div><h2>Tren Parameter · 7 Hari Terakhir</h2><p>Visualisasi data sensor untuk Kolam 01</p></div><div class="legend"><span class="l-green">● pH</span><span class="l-orange">● Suhu</span><span class="l-yellow">● Cahaya</span><span class="l-blue">● Kekeruhan</span></div></div><div class="chart"><div class="y-labels"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div><svg viewBox="0 0 720 220" preserveAspectRatio="none" aria-label="Grafik tren parameter"><g class="gridlines"><line x1="0" y1="10" x2="720" y2="10"/><line x1="0" y1="60" x2="720" y2="60"/><line x1="0" y1="110" x2="720" y2="110"/><line x1="0" y1="160" x2="720" y2="160"/><line x1="0" y1="210" x2="720" y2="210"/></g><path class="line ph" d="M0,77 L100,72 L200,78 L300,64 L400,70 L500,58 L600,62 L720,54"/><path class="line temp" d="M0,137 L100,132 L200,140 L300,127 L400,133 L500,125 L600,130 L720,120"/><path class="line light" d="M0,110 L100,105 L200,98 L300,115 L400,100 L500,102 L600,93 L720,97"/><path class="line turb" d="M0,173 L100,168 L200,177 L300,171 L400,180 L500,174 L600,178 L720,170"/></svg><div class="x-labels"><span>14 Agu</span><span>15 Agu</span><span>16 Agu</span><span>17 Agu</span><span>18 Agu</span><span>19 Agu</span><span>20 Agu</span></div></div></section>
+          <section class="panel twin-panel" id="twin"><div class="panel-title"><div><h2>Digital Twin · Kolam 01</h2><p>Replika virtual kondisi saat ini</p></div><span class="live-dot">● LIVE</span></div><div class="pond-scene"><div class="sun-reflect"></div><div class="pipe pipe-a"></div><div class="pipe pipe-b"></div><div class="float float-a"></div><div class="float float-b"></div><div class="ripples"></div><div class="pond-label">Kondisi virtual sinkron</div></div><div class="twin-stats"><div><span>Status kolam</span><strong>Optimal</strong></div><div><span>Estimasi panen</span><strong>2–3 hari</strong></div><div><span>Pertumbuhan</span><strong>↗ 0.18 kg/m³</strong></div></div></section>
+        </div>
+        <div class="bottom-grid"><section class="panel prediction" id="biomassa"><div><span class="eyebrow">AI PREDICTION</span><h2>Prediksi Biomassa</h2><p>Estimasi 3 hari ke depan</p></div><div class="prediction-number"><strong>1.42</strong><span>kg/m³</span></div><div class="prediction-copy"><b>Rekomendasi panen</b><strong>23–24 Agu 2026</strong><small>Kondisi diproyeksikan tetap ideal</small></div></section><section class="panel notices" id="notifikasi"><div class="panel-title"><div><h2>Notifikasi & Rekomendasi</h2><p>Prioritas tindakan pembudidaya</p></div><a href="#notifikasi">Lihat semua</a></div><div class="notice warning"><b>!</b><div><strong>Kolam 02: kekeruhan meningkat</strong><p>22.8 NTU terdeteksi. Periksa aerasi dan media kultur.</p></div><time>12:20</time></div><div class="notice"><b>✓</b><div><strong>Kolam 01 siap mendekati panen</strong><p>AI memprediksi biomassa target tercapai 2–3 hari lagi.</p></div><time>11:55</time></div></section></div>
+      </section>
+    </main>
+    <div class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
