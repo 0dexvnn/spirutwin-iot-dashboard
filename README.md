@@ -1,7 +1,7 @@
 # 🌱 SPIRUTWIN — Smart IoT Spirulina Cultivation & Monitoring Dashboard
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0dexvnn/spirutwin-iot-dashboard/main/docs/images/logo.jpeg" alt="SPIRUTWIN Logo" width="160">
+  <img src="./docs/images/logo.jpeg" alt="SPIRUTWIN Logo" width="160">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 **SPIRUTWIN** adalah platform digital twin dan pemantauan berbasis IoT yang dirancang khusus untuk budidaya mikroalga *Spirulina platensis*. Sistem ini membantu pembudidaya dan peneliti memantau kondisi fisik-kimia air kolam secara *real-time*, mencegah gagal panen, serta mengestimasi biomassa panen menggunakan algoritma prediktif.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0dexvnn/spirutwin-iot-dashboard/main/docs/images/alat_kolam.jpeg" alt="Perangkat IoT Kolam Spirutwin" width="600">
+  <img src="./docs/images/alat_kolam.jpeg" alt="Perangkat IoT Kolam Spirutwin" width="600">
   <br>
   <em>Perangkat Monitoring Lapangan pada Kolam Budidaya Spirulina</em>
 </p>
@@ -37,7 +37,7 @@
 - 👨‍🌾 **Manajemen Data Petani:** Penugasan kolam dan pemantauan aktivitas lapangan.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0dexvnn/spirutwin-iot-dashboard/main/docs/images/bot_tele.jpeg" alt="Integrasi Bot Telegram" width="380">
+  <img src="./docs/images/bot_tele.jpeg" alt="Integrasi Bot Telegram" width="380">
   <br>
   <em>Layanan Notifikasi dan Laporan Kondisi Kolam via Telegram Bot</em>
 </p>
